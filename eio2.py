@@ -8,11 +8,12 @@ for i in range(n):
     nameList = name.split()
     firstName = nameList[0]
     if firstName not in people:
-        firstName = {
+        people[firstName] = {
             "tal" : "0",
             "har" : "0"
         }
         people.update(firstName)
 print(people)
+#people[namelist[0]][namelist[1]]
 
     
